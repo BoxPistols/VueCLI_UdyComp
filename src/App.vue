@@ -7,7 +7,7 @@
 
 <script>
   // Local
-  import LikeHead from "./LikeHead";
+  import LikeHead from "./assets/components/LikeHead";
 
   export default {
     // Local
