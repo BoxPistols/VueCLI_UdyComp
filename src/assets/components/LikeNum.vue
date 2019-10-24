@@ -1,28 +1,23 @@
 <template>
   <div class="container">
     <div class="row">
-      <header>Head</header>
-      <p>いいね（ {{ num }} ）</p>
+      <h3>いいね（ {{ num / 2 }} ）</h3>
     </div>
     <div class="row">
-      <button class="button column column-25 column-offset-25" @click="inc"> +1 </button>
-      <button class="button column column-25 column-offset-25" @click="reset"> reaet </button>
+      <button class="button column column-25 " @click="inc"> +1 </button>
+      <button class="button column column-25 " @click="reset"> reaet </button>
     </div>
   </div>
 </template>
 
 <script>
   export default {
-    data: function () {
-      return {
-        num: 5
-      }
-    },
+    props: ["num"],
     methods: {
-      inc: function () {
+      inc() {
         this.num += 1
       },
-      reset: function () {
+      reset() {
         this.num = 0
       }
     }
@@ -30,6 +25,10 @@
 </script>
 
 <style scoped lang="sass">
-  div
-    text-align: center
+.row
+  justify-content: center
+.button
+  margin: 8px 8px 32px
+p
+  margin: 0
 </style>

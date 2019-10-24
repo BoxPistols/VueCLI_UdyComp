@@ -2,7 +2,9 @@
   <div class="l_block">
     <div class="">
       <like-head></like-head>
-      <LikeNum></LikeNum>
+      <h2 class="totalNum"> {{ num }} </h2>
+      <LikeNum :num="num"></LikeNum>
+      <LikeNum :num="num"></LikeNum>
     </div>
   </div>
 </template>
@@ -12,17 +14,22 @@
   import LikeHead from "./assets/components/LikeHead";
 
   export default {
-    // Local
+    data() {
+      return {
+        num: 12
+      }
+    },
     components: {
       LikeHead: LikeHead
     }
   }
 </script>
 
-<style lang="sass" >
-  body
-    padding: 2%
-    .l_block
-      max-width: 960px
-      margin: auto
+<style lang="sass">
+  .l_block
+    background-color: lavender
+    padding: 16px 32px 32px
+  .totalNum
+    font-size: 42px
+    text-align: center
 </style>
