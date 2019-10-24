@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 //Global
-import LikeNum from "./LikeNum"
+import LikeNum from "./assets/components/LikeNum"
 
 // Develop
 Vue.config.productionTip = false
