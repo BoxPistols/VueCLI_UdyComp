@@ -1,8 +1,13 @@
 <template>
-  <div>
-    <p>いいね（ {{ num }} ）</p>
-    <button @click="inc"> +1 </button>
-    <button @click="reset"> reaet </button>
+  <div class="container">
+    <div class="row">
+      <header>Head</header>
+      <p>いいね（ {{ num }} ）</p>
+    </div>
+    <div class="row">
+      <button class="button column column-25 column-offset-25" @click="inc"> +1 </button>
+      <button class="button column column-25 column-offset-25" @click="reset"> reaet </button>
+    </div>
   </div>
 </template>
 
@@ -24,6 +29,7 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="sass">
+  div
+    text-align: center
 </style>

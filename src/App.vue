@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <LikeHead></LikeHead>
-    <LikeNum></LikeNum>
+  <div class="l_block">
+    <div class="">
+      <like-head></like-head>
+      <LikeNum></LikeNum>
+    </div>
   </div>
 </template>
 
@@ -12,14 +14,15 @@
   export default {
     // Local
     components: {
-      LikeHead
+      LikeHead: LikeHead
     }
   }
 </script>
 
-<style >
-  body{
-    padding: 2%;
-  }
-
+<style lang="sass" >
+  body
+    padding: 2%
+    .l_block
+      max-width: 960px
+      margin: auto
 </style>

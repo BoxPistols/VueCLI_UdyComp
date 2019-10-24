@@ -1,5 +1,9 @@
 <template>
-  <h1>Like!</h1>
+  <div>
+    <header>
+      <h1>Like!</h1>
+    </header>
+  </div>
 </template>
 
 <script>
@@ -8,6 +12,8 @@
   }
 </script>
 
-<style scoped>
-
+<style lang="sass" scoped>
+header
+  background: lightsteelblue
+  text-align: center
 </style>
