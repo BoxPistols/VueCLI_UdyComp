@@ -9,7 +9,7 @@
 <script>
   export default {
     name: "LikeHead"
-  }
+  };
 </script>
 
 <style lang="sass" scoped>

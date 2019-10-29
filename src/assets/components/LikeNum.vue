@@ -13,6 +13,12 @@
 <script>
   export default {
     props: ["num"],
+    computed: {
+      // num() {
+      //   return this.num / 2;
+      // }
+    },
+    
     methods: {
       inc() {
         this.num += 1
@@ -21,7 +27,7 @@
         this.num = 0
       }
     }
-  }
+  };
 </script>
 
 <style scoped lang="sass">

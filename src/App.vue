@@ -1,11 +1,16 @@
 <template>
   <div class="l_block">
+    
     <div class="">
+      
       <like-head></like-head>
-      <h2 class="totalNum"> {{ num }} </h2>
-      <LikeNum :num="num"></LikeNum>
-      <LikeNum :num="num"></LikeNum>
+      
+      <!-- <h2 class="totalNum"> {{ num / 2 }} </h2> -->
+      <like-num :num="num"></like-num>
+      <like-num :num="num"></like-num>
+    
     </div>
+
   </div>
 </template>
 
@@ -16,13 +21,13 @@
   export default {
     data() {
       return {
-        num: 12
+        num: 10
       }
     },
     components: {
-      LikeHead: LikeHead
+      LikeHead
     }
-  }
+  };
 </script>
 
 <style lang="sass">
