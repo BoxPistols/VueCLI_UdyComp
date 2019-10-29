@@ -21,7 +21,7 @@
   export default {
     data() {
       return {
-        num: 10
+        num: 0
       }
     },
     components: {

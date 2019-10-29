@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <h3>いいね（ {{ num / 2 }} ）</h3>
+      <h3>いいね（ {{ num }} ）/ {{ halfNum }}</h3>
     </div>
     <div class="row">
       <button class="button column column-25 " @click="inc"> +1 </button>
@@ -13,10 +13,11 @@
 <script>
   export default {
     props: ["num"],
+
     computed: {
-      // num() {
-      //   return this.num / 2;
-      // }
+      halfNum() {
+        return this.num + this.num;
+      }
     },
     
     methods: {
