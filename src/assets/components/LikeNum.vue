@@ -12,7 +12,14 @@
 
 <script>
   export default {
-    props: ["num"],
+    // props: ["num"],
+    props: {
+      num: {
+        type: Number,
+        required: true
+
+      }
+    },
 
     computed: {
       halfNum() {
